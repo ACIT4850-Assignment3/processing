@@ -11,7 +11,7 @@ RUN pip3 install -r requirements.txt
 
 COPY . /app
 
-EXPOSE 8100
+EXPOSE 8101
 
 ENTRYPOINT ["python3"]
 
