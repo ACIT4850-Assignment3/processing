@@ -90,12 +90,12 @@ def get_stats():
 
 def populate_stats():
     """ periodically update stats """
+    logger.info("CAPS SADADASD")
     session = DB_SESSION()
     time = datetime.datetime.now()
     create_table()
     result = session.query(Stats).order_by(Stats.last_updated.desc()).first()
    
-    logger.info("CAPS SADADASD")
     if result == None:
         Stats(5,6,100, 200, 10,10, time)
   
