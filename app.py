@@ -95,7 +95,7 @@ def populate_stats():
     create_table()
     result = session.query(Stats).order_by(Stats.last_updated.desc()).first()
    
-
+    logger.info("CAPS SADADASD")
     if result == None:
         Stats(5,6,100, 200, 10,10, time)
   
