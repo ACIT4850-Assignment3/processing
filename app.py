@@ -90,7 +90,7 @@ def get_stats():
 
 def populate_stats():
     """ periodically update stats """
-    logger.info("CAPS SADADASD")
+    logger.info("IT WORKS!!!!!")
     session = DB_SESSION()
     time = datetime.datetime.now()
     create_table()
